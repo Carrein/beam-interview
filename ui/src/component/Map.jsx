@@ -6,6 +6,7 @@ import DirectionsBikeRoundedIcon from "@material-ui/icons/DirectionsBikeRounded"
 import Skeleton from "@material-ui/lab/Skeleton";
 
 const Map = ({ location, isFetching }) => {
+  // If location data is not loaded display a skeleton screeen.
   if (isFetching || location === null) {
     return (
       <GoogleMapReactWrapper>
@@ -14,8 +15,7 @@ const Map = ({ location, isFetching }) => {
     );
   }
 
-  console.log(location, isFetching);
-
+  // Else render map with points based on retrieved API location data call.
   return (
     <GoogleMapReactWrapper>
       <GoogleMapReact
