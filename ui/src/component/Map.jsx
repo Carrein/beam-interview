@@ -19,7 +19,7 @@ const Map = ({ location, isFetching }) => {
   return (
     <GoogleMapReactWrapper>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: "AIzaSyChDYyvJB4EcbCFvee8z6x4tGuaKrzrKqE" }}
+        bootstrapURLKeys={{ key: "" }} // YOU WILL HAVE TO PROVIDE YOUR OWN GOOGLE MAPS API KEY HERE - https://developers.google.com/maps/documentation/javascript/get-api-key
         defaultCenter={{
           lat: 1.3521,
           lng: 103.8192

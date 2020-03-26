@@ -6,7 +6,6 @@ import {
 import { combineReducers } from "redux";
 
 export const isFetching = (state = false, action) => {
-  console.log(action);
   switch (action.type) {
     case FETCHING_LOCATION:
       return true;
